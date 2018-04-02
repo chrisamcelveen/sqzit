@@ -1,0 +1,11 @@
+version: '2'
+services:
+    sqzit-postgresql:
+        image: postgres:9.6.5
+        # volumes:
+        #     - ~/volumes/jhipster/sqzit/postgresql/:/var/lib/postgresql/data/
+        environment:
+            - POSTGRES_USER=sqzit
+            - POSTGRES_PASSWORD=
+        ports:
+            - 5432:5432
